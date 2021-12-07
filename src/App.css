@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,19 +9,172 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-Button {
+  background-color: #0094ff;
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.accountBalance {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.surveyAsk {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 650px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.SurveyButtons {
+  display: inline-flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.SurveyButton {
+  background-color: #0094ff;
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 100vh;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(20px + 4vmin);
+  transition: 1s;
+}
+
+.sayYes {
+  transition: 0.5s;
+  background-color: #66bb6a;
+  width: 50%;
+}
+
+.sayYes:hover {
+  width: 70%;
+  background-color: #52c458;
+  font-size: calc(20px + 12vmin);
+}
+
+.sayNo {
+  width: 50%;
+  background-color: #ef5350;
+  transition: 0.5s;
+}
+
+.sayNo:hover {
+  width: 70%;
+  background-color: #ff4542;
+  font-size: calc(20px + 12vmin);
+}
+
+.surveyVoted {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  color: black;
+  font-size: 18px;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.icons {
+  font-size: 38px;
+  margin: 10px;
+  color: #282c34;
+  cursor: pointer;
+}
+
+.addSurvey {
+  display: inline-flex;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.addSurvey input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px 0 0 10px;
+  border: 0;
+  padding: 10px;
+  outline: 0;
+}
+
+.addSurvey button {
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  background-color: #282c34;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 10px;
+  outline: 0;
+}
+
+.results {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  background-color: #282c34;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.resultContainer {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.resultQuestion {
+  margin-top: 10px;
+}
+
+.progressBar {
+  width: 200px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progressBarResult {
+  border-radius: 5px 0 0 5px;
+  color: #282c34;
 }
