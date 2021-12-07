@@ -5,7 +5,6 @@ import { ethers } from "ethers";
 function App() {
   const [isConnected, setIsConnected] = useState(false);
   const [balance, setBalance] = useState("0")
-  const [user, setUser] = useState();
   const [survey, setSurvey] = useState([]);
   const [allSurvey, setAllSurvey] = useState([]);
   const [textNewSurver, setTextNewSurvey] = useState("");
@@ -17,7 +16,6 @@ function App() {
     await provider.send("eth_requestAccounts", []);
     const signer = provider.getSigner()
     if (signer._isSigner) {
-      setUser(signer);
       setIsConnected(true);
       const _balance = await signer.getBalance()
 
